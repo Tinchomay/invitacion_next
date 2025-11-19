@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
+/* 1. Definimos las variables raíz de tu tema "Coquette" */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Estos son los colores base de tu página */
+  --background: #FDF8F5; /* El fondo crema/rosa pálido de tu imagen */
+  --foreground: #5a4a40; /* Un color de texto oscuro que combina */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colores personalizados de la marca (para el Hero) */
+  --brand-pink: #F48CBB;
+  --brand-gold: #C6A993;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Opcional: define colores para modo oscuro si lo deseas */
+    --background: #1a1513;
+    --foreground: #e0d5cf;
   }
+}
+
+/* 2. Aquí está la magia de Tailwind v4 */
+@theme inline {
+  /* Mapeamos los colores base de la app */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Mapeamos los colores personalizados de la marca */
+  /* Ahora puedes usar clases como: bg-brand-pink, text-brand-gold */
+  --color-brand-pink: var(--brand-pink);
+  --color-brand-gold: var(--brand-gold);
+
+  /* Mapeamos las fuentes (que importaremos en layout.tsx) */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-script: var(--font-pinyon); /* Fuente cursiva para "Mis", "Naomy" */
+  --font-serif: var(--font-playfair); /* Fuente serif para "XV" */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* 3. Usamos la fuente 'sans' por defecto de Geist/Tailwind */
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
