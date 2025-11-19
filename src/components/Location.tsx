@@ -133,7 +133,7 @@ export default function Location() {
             7:00 P.M.
           </p>
           <a
-            href="https://maps.google.com" 
+            href="https://maps.app.goo.gl/6tfesT4nUPteE6wc8?g_st=iw" 
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 rounded-full bg-brand-pink px-10 py-3 font-serif text-lg text-white shadow-lg transition-transform hover:scale-105"
@@ -155,7 +155,7 @@ export default function Location() {
             8:00 P.M.
           </p>
           <a
-            href="https://maps.google.com" // <-- Pon el link de Google Maps aquí
+            href="https://maps.app.goo.gl/LfyrxFxS3G2GAEwE7?g_st=iw" // <-- Pon el link de Google Maps aquí
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 rounded-full bg-brand-pink px-10 py-3 font-serif text-lg text-white shadow-lg transition-transform hover:scale-105"
