@@ -47,7 +47,7 @@ const ClipboardIcon = ({ className }: { className?: string }) => (
 
 export default function RSVP() {
   const WHATSAPP_NUMBER = "529331373202";
-  const WHATSAPP_MESSAGE = "¡Hola! Me encantaría confirmar mi asistencia a los XV de Naomy.";
+  const WHATSAPP_MESSAGE = "¡Hola! Me encantaría confirmar mi asistencia a los XV de Ary.";
   const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
   return (
