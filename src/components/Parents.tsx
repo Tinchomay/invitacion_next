@@ -129,8 +129,8 @@ export default function Parents() {
             Mis Padrinos de Brindis
           </h3>
           <div className="mt-4 font-serif text-xl text-foreground md:text-2xl">
-            <p>ERICK GUIOCHIN VICENCio</p>
-            <p className="my-1 text-lg">E</p>
+            <p>ERICK GUIOCHIN VICENCIO</p>
+            <p className="my-1 text-lg">Y</p>
             <p>EVELYN HERNÁNDEZ PÉREZ</p>
           </div>
         </motion.div>

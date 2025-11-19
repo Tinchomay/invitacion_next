@@ -127,7 +127,7 @@ export default function Location() {
             CEREMONIA
           </h3>
           <p className="mt-4 font-serif text-xl text-foreground">
-            Parroquia "El Señor Milagroso"
+            Parroquia "San Marcos"
           </p>
           <p className="mt-4 font-serif text-3xl font-bold text-brand-pink">
             7:00 P.M.
