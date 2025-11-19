@@ -29,7 +29,7 @@ export default function Hero() {
   return (
     // Usamos motion.main para animar el contenedor
     <motion.main
-      className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden p-4 bg-brand-bg"
+      className="relative flex min-h-[90vh] w-full flex-col items-center justify-center overflow-hidden p-4 bg-brand-bg"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
