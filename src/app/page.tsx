@@ -1,3 +1,4 @@
+import AudioPlayer from '@/components/AudioPlayer'
 import Countdown from '@/components/Countdown'
 import DressCode from '@/components/DressCode'
 import Gallery from '@/components/Gallery'
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <Gallery /> */}
+      <AudioPlayer />
       <Countdown />
       <Parents />
       <Location />
