@@ -177,7 +177,7 @@ export default function Countdown() {
       >
         <Image
           src="/foto5.jpeg" // Usamos la primera foto
-          alt="Naomy en verde"
+          alt="Ary en verde"
           width={720}
           height={720}
           className="object-cover w-full h-auto"

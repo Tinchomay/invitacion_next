@@ -98,7 +98,7 @@ export default function Parents() {
         >
           <Image
             src="/foto2.jpeg" // Usamos la segunda foto
-            alt="Naomy en el bosque"
+            alt="Ary en el bosque"
             width={720}
             height={720}
             className="object-cover w-full h-auto"

@@ -175,7 +175,7 @@ export default function Location() {
       >
         <Image
           src="/foto3.jpeg" // Usamos la tercera foto
-          alt="Naomy en verde"
+          alt="Ary en verde"
           width={720}
           height={720}
           className="object-cover w-full h-auto"

@@ -116,7 +116,7 @@ export default function DressCode() {
       >
         <Image
           src="/foto4.jpeg" // Usamos la cuarta foto
-          alt="Naomy en la roca"
+          alt="Ary en la roca"
           width={720}
           height={720}
           className="object-cover w-full h-auto"

@@ -29,7 +29,7 @@
   /* Mapeamos las fuentes (que importaremos en layout.tsx) */
   /* --font-sans: var(--font-geist-sans); */ /* Si no usas geist, puedes quitar esto también */
   /* --font-mono: var(--font-geist-mono); */
-  --font-script: var(--font-pinyon); /* Fuente cursiva para "Mis", "Naomy" */
+  --font-script: var(--font-pinyon); /* Fuente cursiva para "Mis", "Ary" */
   --font-serif: var(--font-playfair); /* Fuente serif para "XV" */
 }
 

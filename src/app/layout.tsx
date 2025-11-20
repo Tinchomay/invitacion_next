@@ -7,7 +7,7 @@ import { Pinyon_Script, Playfair_Display } from "next/font/google";
 
 import "./globals.css";
 
-// Configuración de Pinyon Script (para "Mis", "Naomy")
+// Configuración de Pinyon Script (para "Mis", "Ary")
 const pinyonScript = Pinyon_Script({
   weight: "400",
   subsets: ["latin"],
@@ -22,7 +22,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Mis XV Naomy",
+  title: "Mis XV Ary",
   description: "Invitación para mis XV años",
 };
 

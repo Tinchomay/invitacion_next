@@ -96,7 +96,7 @@ export default function Gifts() {
       >
         <Image
           src="/foto1.jpeg"
-          alt="Naomy sentada"
+          alt="Ary sentada"
           width={720}
           height={720}
           className="object-cover w-full h-auto"
