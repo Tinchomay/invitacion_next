@@ -47,14 +47,13 @@ export default function Hero() {
       </div>
 
       {/* --- Fecha (Ahora Arriba) --- */}
-      <motion.div
+      {/* <motion.div
         className="absolute top-12 z-10 font-serif text-lg tracking-[0.3em] text-brand-gold md:top-20 md:text-2xl font-bold uppercase"
-        // Añadimos una sombra de texto blanca usando estilos en línea
         style={{ textShadow: "2px 2px 2px  rgba(255, 255, 255, 0.9)" }}
         variants={itemVariants}
       >
         03 de Enero de 2026
-      </motion.div>
+      </motion.div> */}
 
       {/* --- Texto Principal (Centrado) --- */}
       <motion.div
