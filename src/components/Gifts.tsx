@@ -76,18 +76,18 @@ export default function Gifts() {
         className="mt-8 max-w-lg font-serif text-xl text-foreground md:text-2xl"
         variants={itemVariants}
       >
-        Lo más importante para mí es que puedas celebrar este día tan especial. Si deseas hacerme un regalo, aquí tienes algunas opciones disponibles:
+        Lo más importante para mí es que disfrutes este día tan especial. Si deseas hacerme un regalo, aquí tienes una opción:
       </motion.p>
 
       <motion.p
         className="mt-6 font-serif text-2xl font-bold tracking-wider text-brand-gold md:text-3xl"
         variants={itemVariants}
       >
-        EFECTIVO O REGALO FÍSICO
+        LLUVIA DE SOBRES
       </motion.p>
 
       {/* 3. Añadir la foto aquí */}
-      <motion.div
+      {/* <motion.div
         className="relative mt-16 w-full max-w-md overflow-hidden rounded-2xl shadow-xl"
         variants={imageLeftVariants}
         initial="hidden"
@@ -95,14 +95,20 @@ export default function Gifts() {
         viewport={{ once: true, amount: 0.5 }}
       >
         <Image
-          src="/foto1.jpeg" // Usamos la quinta foto
+          src="/foto1.jpeg"
           alt="Naomy sentada"
           width={720}
           height={720}
           className="object-cover w-full h-auto"
         />
-      </motion.div>
-
+      </motion.div> */}
+      <motion.p
+        className="mt-40 max-w-lg font-serif text-xl text-foreground md:text-2xl"
+        variants={itemVariants}
+      >
+        ¡Gracias por ser parte de uno de los mejores días de mi vida!
+  
+      </motion.p>
     </motion.section>
   );
 }

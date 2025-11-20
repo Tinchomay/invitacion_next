@@ -80,7 +80,7 @@ export default function Hero() {
             />
           </div>
         </div>
-        <span className="absolute bottom-[2%] right-[8%] font-script text-6xl text-brand-gold md:bottom-[12%] md:right-[10%] md:text-8xl drop-shadow-md">
+        <span className="absolute bottom-[2%] right-[8%] font-script text-6xl text-brand-gold md:bottom-[12%] md:right-[10%] md:text-8xl drop-shadow-md font-bold">
           ARY
         </span>
 
