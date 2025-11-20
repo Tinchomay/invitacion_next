@@ -102,13 +102,23 @@ export default function Gifts() {
           className="object-cover w-full h-auto"
         />
       </motion.div> */}
-      <motion.p
-        className="mt-40 max-w-lg font-serif text-xl text-foreground md:text-2xl"
-        variants={itemVariants}
+      
+      <motion.div
+         className="mt-40 flex flex-col items-center gap-2"
+         variants={itemVariants}
       >
-        ¡Gracias por ser parte de uno de los mejores días de mi vida!
-  
-      </motion.p>
+          <p className="max-w-lg font-serif text-xl text-foreground md:text-2xl italic">
+            ¡Gracias por ser parte de uno de los mejores días de mi vida!
+          </p>
+
+          <p className="mt-8 font-script text-4xl text-brand-pink md:text-5xl">
+            Con cariño,
+          </p>
+          <p className="font-script text-6xl text-brand-gold md:text-7xl">
+            Ary
+          </p>
+      </motion.div>
+
     </motion.section>
   );
 }
