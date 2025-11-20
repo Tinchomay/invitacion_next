@@ -95,7 +95,7 @@ export default function Gifts() {
         viewport={{ once: true, amount: 0.5 }}
       >
         <Image
-          src="/foto5.jpeg" // Usamos la quinta foto
+          src="/foto1.jpeg" // Usamos la quinta foto
           alt="Naomy sentada"
           width={720}
           height={720}

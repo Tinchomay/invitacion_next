@@ -1,10 +1,10 @@
 "use client"; // Necesario para Framer Motion
 
 import Image from 'next/image';
-import { motion, Variants } from 'framer-motion'; // 1. Importar 'Variants'
+import { motion, Variants } from 'framer-motion'; 
 
 // Variantes para la animación de entrada
-const containerVariants: Variants = { // 2. Añadir el tipo 'Variants'
+const containerVariants: Variants = { 
   hidden: {},
   visible: {
     transition: {
@@ -13,7 +13,7 @@ const containerVariants: Variants = { // 2. Añadir el tipo 'Variants'
   },
 };
 
-const itemVariants: Variants = { // 3. Añadir el tipo 'Variants'
+const itemVariants: Variants = { 
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -27,57 +27,47 @@ const itemVariants: Variants = { // 3. Añadir el tipo 'Variants'
 
 export default function Hero() {
   return (
-    // Usamos motion.main para animar el contenedor
+    // Usamos h-[100vh] para asegurar que ocupe exactamente el alto de la pantalla
     <motion.main
-      className="relative flex min-h-[90vh] w-full flex-col items-center justify-center overflow-hidden p-4 bg-brand-bg"
+      className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden p-4"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
       
-      {/* --- Elementos Decorativos (Imágenes) --- */}
-      
-      <motion.div
-        className="absolute left-4 top-4 w-24 md:left-10 md:top-10 md:w-40"
-        variants={itemVariants}
-      >
+      {/* --- IMAGEN DE FONDO --- */}
+      <div className="absolute inset-0 -z-10">
         <Image
-          src="/disco-ball1.png" // Desde la carpeta /public
-          alt="Bola Disco"
-          width={160}
-          height={160}
-          className="object-contain"
+          src="/mariposas.jpg" 
+          alt="Fondo Mariposas"
+          fill
+          className="opacity-40"
           priority
         />
-      </motion.div>
+      </div>
 
+      {/* --- Fecha (Ahora Arriba) --- */}
       <motion.div
-        className="absolute right-4 top-4 w-20 md:right-10 md:top-10 md:w-32"
+        className="absolute top-26 z-10 font-serif text-lg tracking-[0.3em] text-brand-gold md:top-20 md:text-2xl font-bold uppercase"
+        // Añadimos una sombra de texto blanca usando estilos en línea
+        style={{ textShadow: "2px 2px 2px  rgba(255, 255, 255, 0.9)" }}
         variants={itemVariants}
       >
-        <Image
-          src="/cherries1.png" // Desde la carpeta /public
-          alt="Cerezas"
-          width={140}
-          height={140}
-          className="object-contain"
-          priority
-        />
+        03 de Enero de 2026
       </motion.div>
 
-      {/* --- Texto Principal (Centrado y Superpuesto) --- */}
-      
+      {/* --- Texto Principal (Centrado) --- */}
       <motion.div
         className="relative z-10 flex flex-col items-center justify-center text-center h-[320px] w-[320px] md:h-[550px] md:w-[550px]"
         variants={itemVariants}
       >
         
-        <span className="absolute top-[10%] left-[8%] font-script text-5xl text-brand-gold md:top-[12%] md:left-[10%] md:text-7xl">
+        <span className="absolute top-[10%] left-[8%] font-script text-5xl text-brand-gold md:top-[12%] md:left-[10%] md:text-7xl drop-shadow-sm">
           Mis
         </span>
 
         <div className="relative">
-          <h1 className="font-serif text-[11rem] font-bold leading-[0.8] text-brand-pink md:text-[18rem]">
+          <h1 className="font-serif text-[11rem] font-bold leading-[0.8] text-brand-pink md:text-[18rem] drop-shadow-sm">
             XV
           </h1>
           
@@ -90,18 +80,10 @@ export default function Hero() {
             />
           </div>
         </div>
-        <span className="absolute bottom-[2%] right-[8%] font-script text-6xl text-brand-gold md:bottom-[12%] md:right-[10%] md:text-8xl">
+        <span className="absolute bottom-[2%] right-[8%] font-script text-6xl text-brand-gold md:bottom-[12%] md:right-[10%] md:text-8xl drop-shadow-md">
           ARY
         </span>
 
-      </motion.div>
-
-      {/* --- Fecha --- */}
-      <motion.div
-        className="absolute bottom-12 z-10 font-serif text-sm tracking-[0.2em] text-brand-gold md:bottom-16 md:text-xl"
-        variants={itemVariants}
-      >
-        03 DE ENERO DE 2026
       </motion.div>
 
     </motion.main>

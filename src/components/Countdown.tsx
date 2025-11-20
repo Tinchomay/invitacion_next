@@ -176,7 +176,7 @@ export default function Countdown() {
         viewport={{ once: true, amount: 0.5 }}
       >
         <Image
-          src="/foto1.jpeg" // Usamos la primera foto
+          src="/foto5.jpeg" // Usamos la primera foto
           alt="Naomy en verde"
           width={720}
           height={720}

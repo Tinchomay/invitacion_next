@@ -3,11 +3,11 @@
 /* 1. Definimos las variables raíz de tu tema "Coquette" */
 :root {
   /* Estos son los colores base de tu página */
-  --background: #FDF8F5; /* El fondo crema/rosa pálido de tu imagen */
+  --background: #fff2f9; /* El fondo crema/rosa pálido de tu imagen */
   --foreground: #5a4a40; /* Un color de texto oscuro que combina */
 
   /* Colores personalizados de la marca (para el Hero) */
-  --brand-pink: #F48CBB;
+  --brand-pink: #ff7ab6;
   --brand-gold: #C6A993;
 }
 
